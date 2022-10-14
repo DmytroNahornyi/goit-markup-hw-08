@@ -1,0 +1,1057 @@
+@charset "UTF-8";
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+:root {
+  --body-text: #212121;
+  --logo: #2196F3;
+  --nav-logo: #000000;
+  --header-contact: #757575;
+  --hero: #ffffff;
+  --button-hero: #2196F3;
+  --footer-logo: #ffffff;
+  --footer-adress: #ffffff;
+  --button: #F5F4FA;
+  --hero-size: #2F303A;
+  --border: #AFB1B8;
+  --text-hidden: #ffffff;
+  --footer-text: rgba(255, 255, 255, 0.6);
+}
+
+/* Применяется на всю страницу кроме ссылок. */
+body {
+  color: var(--body-text);
+  /* Шрифты */
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* Контейнеры под блоки */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* убераем границы и точки в списках */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+.hide {
+  font-size: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  /* шрифт лого */
+  /* Логотип */
+  /* навигация кнопок */
+  /* Кнопки header */
+  /* цвет кнопок хедера */
+  /* Контакты в хедере */
+}
+.header-nav__border {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav__navigation {
+  display: flex;
+  align-items: center;
+}
+.header-nav__navigation > a {
+  color: var(--nav-logo);
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.header-nav__bord {
+  border-bottom: 1px solid #ECECEC;
+}
+.header-nav .header-nav__pages {
+  display: flex;
+  margin-left: 93px;
+  flex-wrap: nowrap;
+}
+.header-nav__logo {
+  color: var(--logo);
+}
+.header-nav__pages .current {
+  position: relative;
+}
+.header-nav__pages .current::after {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--button-hero);
+  border-radius: 2px;
+}
+.header-nav__item:last-child {
+  margin-right: 0px;
+}
+.header-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--body-text);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-nav .current:active,
+.header-nav .current:visited, .header-nav__link:hover, .header-nav__link:focus, .header-nav__contact:hover, .header-nav__contact:focus, .header-nav__icon:hover, .header-nav__icon:focus {
+  color: var(--logo);
+}
+.header-nav__contact {
+  color: var(--header-contact);
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+}
+.header-nav a {
+  text-decoration: none;
+  font-style: normal;
+}
+.header-nav__item {
+  margin-right: 50px;
+}
+.header-nav__icon {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  fill: var(--header-contact);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Почта в header */
+.header-nav__mail {
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
+}
+
+.header-nav__contact:hover,
+.header-nav__contact:focus {
+  fill: var(--button-hero);
+}
+
+.header-nav__contacts {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.header-nav__icon:last-child {
+  margin-right: 0px;
+}
+
+/* Section hero */
+.hero {
+  background-color: var(--hero-size);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page1/header.jpg);
+  position: relative;
+}
+.hero__text {
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--hero);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero__button {
+  color: var(--hero);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background-color: var(--button-hero);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero__button:hover, .hero__button:active {
+  background: #186db3;
+}
+
+.present {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* текст профессий */
+}
+.present__logo {
+  display: flex;
+  justify-content: space-between;
+}
+.present__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--button);
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+}
+.present__box {
+  width: 70px;
+  height: 70px;
+}
+.present__text {
+  height: 72px;
+  width: 270px;
+  margin-top: 10px;
+  color: var(--header-contact);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.present__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.advent {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* Фото профессий */
+}
+.advent__pdg {
+  padding-top: 0;
+}
+.advent__header {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.advent__section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.advent__picture {
+  margin-right: 30px;
+  padding-top: 0;
+}
+.advent__picture:last-child {
+  margin-right: 0px;
+}
+.advent__box {
+  position: relative;
+}
+.advent__description {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  bottom: 0;
+  color: var(--text-hidden);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* Описание текста на картинках в разделе секции 3 */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--button);
+  /* текст секции */
+}
+.team__header {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team__name {
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team__text {
+  color: var(--header-contact);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.team__photo {
+  border: 1px solid var(--hero);
+  width: 270px;
+  background-color: var(--hero);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+}
+.team__photo:last-child {
+  margin-right: 0px;
+}
+.team div {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+.team__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px 30px 32px;
+  margin: 0;
+  gap: 10px;
+}
+.team__iconDesign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  fill: var(--border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  /* justify-content: 50%;
+  align-items: 50%; */
+}
+.team__iconDesign:hover, .team__iconDesign:active {
+  background-color: var(--button-hero);
+  fill: var(--hero);
+}
+
+/* Секция постоянных клиентов */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients__header {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients ul {
+  display: flex;
+  gap: 30px;
+}
+.clients a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients a:hover,
+.clients a:focus {
+  border-color: var(--button-hero);
+}
+.clients__svg {
+  fill: var(--border);
+  width: 170px;
+  height: 92px;
+  padding: 15px 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__svg:hover, .clients__svg:active {
+  fill: var(--button-hero);
+}
+
+.footer {
+  display: flex;
+  background-color: var(--hero-size);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* Иконка для кнопки в футере */
+}
+.footer .container {
+  display: flex;
+}
+.footer__logo {
+  color: var(--logo);
+}
+.footer__logotype {
+  color: var(--footer-logo);
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer__text {
+  color: var(--footer-adress);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+.footer__decor:nth-child(-n+3) {
+  margin-top: 9px;
+}
+.footer__color-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__text:hover, .footer__text:focus {
+  color: var(--logo);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .list {
+  margin-top: 20px;
+}
+.footer__social {
+  margin-left: 70px;
+  margin-top: 7px;
+}
+.footer__social ul {
+  display: flex;
+}
+.footer__icon {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--footer-logo);
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__icon:hover, .footer__icon:active {
+  background-color: var(--button-hero);
+}
+.footer__svg {
+  width: 20px;
+  height: 20px;
+}
+.footer__mail {
+  margin-left: auto;
+  margin-top: 7px;
+}
+.footer__mail strong {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__form {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--hero-size);
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding-left: 28px;
+  align-items: center;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--footer-logo);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.footer__button:hover, .footer__button:active {
+  background: #186db3;
+}
+.footer__twitter {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: 13px 28px 13px 120px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* modal */
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--text-hidden);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-text {
+  padding: 40px;
+}
+
+/* текст и формы заполнения */
+.header-modal {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-button button {
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.style-text label, .style-text span {
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--header-contact);
+}
+
+.style-text:focus-within {
+  fill: var(--button-hero);
+  border-radius: 4px;
+}
+
+/* оформление наполнения модального окна */
+.application-form {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrap {
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+input:focus-within {
+  border: 1px solid var(--button-hero);
+  border-radius: 4px;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+/* настройка модального окна (текста и кнопок) */
+.name-block {
+  display: block;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  /* position: relative; */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.coments {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 25px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.chec-button {
+  margin-right: 7px;
+  /* margin-left: 12px; */
+}
+
+.text-box {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-contact);
+}
+
+.document {
+  line-height: 1.71;
+  text-decoration: underline;
+  color: var(--button-hero);
+  margin-left: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(112, 112, 112, 0.1);
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--text-hidden);
+}
+
+.close-img {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+}
+
+.modal button:hover,
+.modal button:focus {
+  fill: var(--logo);
+  border-color: var(--logo);
+}
+
+/* кнопки */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 9px;
+}
+.portfolio__button {
+  font-family: roboto;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 5px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__button:hover, .portfolio__button:focus {
+  color: var(--hero);
+  background-color: var(--button-hero);
+  border: 1px solid transparent;
+}
+.portfolio__content {
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  width: 370px;
+}
+.portfolio__content:hover, .portfolio__content:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__content:hover .portfolio__textHidden {
+  transform: rotateY(0);
+}
+.portfolio__textHidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-hidden);
+  transition: transform 500ms;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+}
+.portfolio__imege {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio__header {
+  /* margin-top: 0; */
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--body-text);
+}
+.portfolio__box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__text {
+  padding: 20px 24px;
+  border: 1px solid var(--footer-adress);
+  width: 370px;
+  border-top: none;
+}
+.portfolio__texts {
+  margin-bottom: 0;
+  color: var(--header-contact);
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+:root {
+    --body-text: #212121;
+    --logo: #2196F3;
+    --nav-logo: #000000;
+    --header-contact: #757575;
+    --hero: #ffffff;
+    --button-hero: #2196F3;
+    --footer-logo: #ffffff;
+    --footer-adress: #ffffff;
+    --button: #F5F4FA;
+    --hero-size: #2F303A;
+    --border: #AFB1B8;
+    --text-hidden: #ffffff;
+    --footer-text: rgba(255, 255, 255, 0.6);
+}
+
+/* Применяется на всю страницу кроме ссылок. */
+body {
+    color: var(--body-text);
+/* Шрифты */
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+
+    /* Контейнеры под блоки */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* убераем границы и точки в списках */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+.hide {
+    font-size: 0;
+}

@@ -1,0 +1,135 @@
+.header-nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    
+    &__border {
+    border-bottom: 1px solid #ececec;
+    }
+    
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+        /* шрифт лого */
+    &__navigation > a {
+        color: var(--nav-logo);
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;        
+    }
+    &__bord {
+        border-bottom: 1px solid #ECECEC;    
+    }
+    .header-nav__pages{
+        display: flex;
+        margin-left: 93px;
+        flex-wrap: nowrap;
+
+    }
+    /* Логотип */
+    &__logo {
+        color: var(--logo);
+    }
+    /* навигация кнопок */  
+    &__pages .current {
+        position: relative;
+    }
+
+    &__pages .current::after {
+        position: absolute;
+        display: block;
+        bottom: -1px;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--button-hero);
+        border-radius: 2px;
+    }
+
+    &__item:last-child  {
+        margin-right: 0px;
+    }
+
+    /* Кнопки header */
+    &__link {
+        // display: inline-flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--body-text);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em; 
+    }
+    /* цвет кнопок хедера */
+    .current:active, 
+    .current:visited,
+    &__link:hover,
+    &__link:focus,
+    &__contact:hover,
+    &__contact:focus,
+    &__icon:hover,
+    &__icon:focus {
+    color: var(--logo);
+    // transition-duration: 2500ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+    /* Контакты в хедере */
+    &__contact {
+        color: var(--header-contact);
+        display: inline-flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em; 
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    &__item {
+        margin-right: 50px;
+    }
+    
+    &__icon {
+        display: flex;
+        margin-left: auto;
+        margin-right: 30px;
+        fill: var(--header-contact);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+}
+
+/* Почта в header */
+.header-nav__mail {
+    margin-right: 10px;
+    width: 18px;
+    height: 20px;
+    padding: 0;
+}
+// Подсветка иконок контактов;
+.header-nav__contact:hover,
+.header-nav__contact:focus {
+    fill: var(--button-hero);
+    
+}
+
+.header-nav__contacts {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.header-nav__icon:last-child {
+    margin-right: 0px;
+}
+

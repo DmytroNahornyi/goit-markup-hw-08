@@ -1,0 +1,47 @@
+// Section present;
+.present {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* текст профессий */
+    
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        // margin-right: 30px;
+        background-color: var(--button);
+        border-radius: 4px;
+        height: 120px;
+        width: 270px;
+    }
+
+    &__box {
+        width: 70px;
+        height: 70px; 
+    }
+
+    &__text {
+        height: 72px;
+        width: 270px;
+        margin-top: 10px;
+        color: var(--header-contact);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
