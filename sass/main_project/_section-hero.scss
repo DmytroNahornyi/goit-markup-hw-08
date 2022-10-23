@@ -10,18 +10,18 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../../images/page1/header/img480x400.jpg);
+    url(./images/page1/header/img480x400.jpg);
     @include retina {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../../images/page1/header/img960x800.jpg);
+        url(./images/page1/header/img960x800.jpg);
     }
     @include tablet {
         width: 768px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../../images/page1/header/img768x400.jpg);
+    url(./images/page1/header/img768x400.jpg);
     @include retina {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../../images/page1/header/img1536x800.jpg);
+        url(./images/page1/header/img1536x800.jpg);
     }
     }
 
@@ -31,10 +31,10 @@
         width: 1600px;
         height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../../images/page1/header/img1600x600.jpg);
+    url(./images/page1/header/img1600x600.jpg);
     @include retina {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../../images/page1/header/img3200x1200.jpg);
+        url(./images/page1/header/img3200x1200.jpg);
     }
     }
 

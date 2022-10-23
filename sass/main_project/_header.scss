@@ -252,9 +252,15 @@
         text-align: center;
         padding-top: 32px;
         padding-bottom: 32px;
+        padding-left: 30px;
         font-size: 14px;
-    } 
 
+    } 
+}
+.correct {
+    @include desktop {
+        padding-left: 0px;
+    }
 }
 .header__container {
     display: flex;
@@ -334,6 +340,4 @@
         display: none;
         
     }
-
-
 }
