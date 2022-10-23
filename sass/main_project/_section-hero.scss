@@ -19,10 +19,10 @@
     @include tablet {
         width: 768px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../../images/768x400.jpg);
+    url(../images/768x400.jpg);
     @include retina {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../../images/1536x800.jpg);
+        url(../images/1536x800.jpg);
         }
     }
 
