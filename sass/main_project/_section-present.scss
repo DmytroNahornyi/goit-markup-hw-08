@@ -1,0 +1,117 @@
+// Section present;
+.present {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 768px;
+
+    }
+    @include desktop{
+        width: 1200px;
+    }
+    
+    /* текст профессий */
+    &__container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: var(--button);
+        border-radius: 4px;
+        height: 120px;
+    }
+
+    &__box {
+        width: 70px;
+        height: 70px; 
+
+    }
+
+    &__text {
+        height: 50px;
+        width: 354px;
+        margin: 0px auto 0px auto;
+        color: var(--header-contact);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+        @include desktop {
+            width: 270px;
+            height: 72px;
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin: 0px auto 10px auto;
+        text-align: center;
+
+        @include tablet {
+            text-align: center; 
+        }
+    }
+}
+
+.present {
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+}
+.present.responsible {
+    width: 1600px;
+}
+
+.present__logo {
+    margin: auto;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 30px;
+        width: 768px;
+    }
+
+    @include desktop {
+        flex-wrap: nowrap;
+        width: 1200px;
+    }
+}
+
+.present__border {
+    margin-bottom: 30px;
+    
+    @include tablet {
+        max-width: calc(50% - 15px);
+        margin: 0;
+    }
+}
+
+.present__description {
+    @include desktop {
+        width: 270px;
+    }
+}
+.present__border:last-child {
+    margin: 0;
+}

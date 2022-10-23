@@ -1,0 +1,89 @@
+/* Section hero */
+.hero {
+    background-color: var(--hero-size);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../../images/page1/header/img480x400.jpg);
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/page1/header/img960x800.jpg);
+    }
+    @include tablet {
+        width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../../images/page1/header/img768x400.jpg);
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/page1/header/img1536x800.jpg);
+    }
+    }
+
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../../images/page1/header/img1600x600.jpg);
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/page1/header/img3200x1200.jpg);
+    }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--hero);
+        font-size: 26px;
+        line-height: 42px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 360px;
+    }
+
+    &__button {
+        color: var(--hero);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        background-color: var(--button-hero);
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 10px 32px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }  
+    &__button:hover,
+    &__button:active {
+        background: #186db3;
+    }
+
+}
+.hero.responsive {
+    width: 1600px;
+}
+
+.hero__text {
+    @include tablet {
+        width: 360px;
+    }
+
+    @include desktop {
+        font-size: 44px;
+        width: 696px;
+    }
+}

@@ -1,0 +1,106 @@
+/* Секция постоянных клиентов */
+.clients {
+    width: 480px;
+    padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 768px;
+
+    }
+
+    @include desktop {
+        width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__header {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        height: 92px;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include minimaze {
+            width: 210px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+    
+        }
+        @include tablet {
+            width: 226px;
+            height: 92px;
+        }
+
+        @include desktop {
+            width: 170px;
+            height: 92px;
+        }
+    }
+
+    a:hover,
+    a:focus {
+    border-color: var(--button-hero); 
+    }
+
+    &__svg {
+        fill: var(--border);
+        width: 170px;
+        height: 92px;
+        padding: 15px 32px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__svg:hover,
+    &__svg:active { 
+    fill: var(--button-hero);
+    }
+}
+
+.clients__container {
+    @include mobile {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    @include tablet {
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desktop {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

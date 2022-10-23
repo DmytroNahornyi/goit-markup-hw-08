@@ -1,0 +1,81 @@
+:root {
+    --body-text: #212121;
+    --logo: #2196F3;
+    --nav-logo: #000000;
+    --header-contact: #757575;
+    --hero: #ffffff;
+    --button-hero: #2196F3;
+    --footer-logo: #ffffff;
+    --footer-adress: #ffffff;
+    --button: #F5F4FA;
+    --hero-size: #2F303A;
+    --border: #AFB1B8;
+    --text-hidden: #ffffff;
+    --footer-text: rgba(255, 255, 255, 0.6);
+}
+
+/* Применяется на всю страницу кроме ссылок. */
+body {
+    color: var(--body-text);
+/* Шрифты */
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+
+/* убераем границы и точки в списках */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    justify-content: center;
+
+
+}
+
+img {
+    display: block;
+}
+
+.hide {
+    font-size: 0;
+}
+@mixin minimaze {
+    @media screen and (min-width: 100px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content
+    }
+}
+
+.global__box {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
