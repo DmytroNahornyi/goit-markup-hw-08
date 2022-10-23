@@ -232,12 +232,12 @@
         margin: 13px 28px 13px 120px;
     }
 
-    &__box {
-        @include desktop {
-            padding-top: 12px;
-            padding-left: 93px;
-        }
-    }
+    // &__box {
+    //     @include desktop {
+    //         padding-top: 12px;
+    //         padding-left: 93px;
+    //     }
+    // }
     
 }
 .footer__container {
@@ -266,9 +266,14 @@
         width: 768px;
         height: 156px;
     }
+
+    @include desktop {
+        padding-left: 83px;
+        padding-top: 12px;
+    }
 }
 
-.experiment {
+.footer__box {
     @include desktop {
         display: flex;
         padding-top: 20px;
