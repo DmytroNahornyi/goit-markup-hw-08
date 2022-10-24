@@ -1,7 +1,8 @@
 /* Секция постоянных клиентов */
 .clients {
     width: 480px;
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 
@@ -11,7 +12,7 @@
     }
 
     @include desktop {
-        width: 1200px;
+        width: 1600px;
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -79,8 +80,8 @@
         width: 450px;
         display: flex;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
         flex-wrap: wrap;
         gap: 30px;
     }

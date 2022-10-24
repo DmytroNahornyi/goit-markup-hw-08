@@ -141,6 +141,10 @@ input, textarea {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--header-contact);
+
+    @include desktop {
+        font-size: 14px;
+    }
 }
 
 .document {

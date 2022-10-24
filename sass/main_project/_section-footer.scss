@@ -1,26 +1,38 @@
 // footer;
 .footer {
     background-color: var(--hero-size);
+    height: 603px;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 100%;
-    width: 480px;
+    min-width: 480px;
+    max-width: 767px;
+        // width: 480px;
     margin-left: auto;
     margin-right: auto;
 
     @include tablet {
-        width: 768px;
+        min-width: 768px;
+        max-width: 1199px;
         height: 463px;
     }
 
     @include desktop {
-        width: 1600px;
+        min-width: 1200px;
+        max-width: 1600px;
         height: 252px;
         padding: 0;
     }
 
     .container {
         display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            display: block;
+        }
+        @include desktop {
+            display: flex;
+        }
     }
 
     &__logo {
@@ -38,7 +50,8 @@
 
         @include tablet {
             display: flex;
-            padding-left: 115px;
+            justify-content: center;
+            // padding-left: 115px;
         }
 
         @include desktop {
@@ -46,17 +59,17 @@
         }
     }
     &__adress {
-        padding-top: 20px;
-        padding-bottom: 60px;
+        margin-top: 20px;
+        margin-bottom: 60px;
 
         @include tablet {
             display: flex;
-            padding-left: 70px;
+            // padding-left: 70px;
         }
 
         @include desktop {
             padding-left: 15px;
-            padding-bottom: 0px;
+            margin-bottom: 0px;
             width: 231px;
 
         }
@@ -106,21 +119,21 @@
 
     &__social ul {
         display: flex;
-        padding-bottom: 60px;
-        padding-top: 20px;
+        margin-bottom: 60px;
+        margin-top: 20px;
 
         @include desktop {
-            padding-bottom: 0px; 
+            margin-bottom: 0px; 
         }
     }
 
     &__social { 
         @include tablet {
-            padding-left: 165px;
+            // padding-left: 165px;
         }
         @include desktop {
-            padding-left: 70px;
-            padding-top: 12px;
+            margin-left: 70px;
+            margin-top: 12px;
         }
 
     }
@@ -240,42 +253,60 @@
     // }
     
 }
-.footer__container {
+.footer__adaptive {
     text-align: center;
 
     @include desktop {
         display: flex;
+        flex-wrap: wrap;
         width: 1200px;
         height: 252px;
         margin-left: auto;
         margin-right: auto;
-        padding: 60px 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         text-align: left;
     }
 }
 
 .footer__block {
+
     @include tablet {
         display: flex;
+        justify-content: space-evenly;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include desktop {
+        justify-content: left;
+        width: 507px;
     }
 }
 
 .footer__contact {
-
+    // width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     @include tablet {
         width: 768px;
         height: 156px;
     }
 
     @include desktop {
-        padding-left: 83px;
-        padding-top: 12px;
+        // display: flex;
+        margin-left: 83px;
+        margin-top: 12px;
+        width: 50%;
     }
 }
 
 .footer__box {
+
     @include desktop {
         display: flex;
         padding-top: 20px;
     }
 }
+

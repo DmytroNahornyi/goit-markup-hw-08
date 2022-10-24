@@ -1,9 +1,10 @@
 // Section present;
 .present {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     width: 480px;
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 
@@ -12,15 +13,15 @@
 
     }
     @include desktop{
-        width: 1200px;
+        width: 1600px;
     }
     
     /* текст профессий */
-    &__container {
-        display: flex;
-        justify-content: center;
+    // &__mobile {
+    //     display: flex;
+    //     justify-content: center;
 
-    }
+    // }
 
     &__description {
         display: flex;
@@ -64,7 +65,7 @@
         text-align: center;
 
         @include tablet {
-            text-align: center; 
+            text-align: left; 
         }
     }
 }
