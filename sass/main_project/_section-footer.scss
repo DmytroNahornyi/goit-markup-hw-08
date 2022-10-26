@@ -55,7 +55,9 @@
         }
 
         @include desktop {
-            padding-left: 15px;
+            // padding-left: 15px;
+            justify-content: left;
+
         }
     }
     &__adress {
@@ -245,13 +247,6 @@
         margin: 13px 28px 13px 120px;
     }
 
-    // &__box {
-    //     @include desktop {
-    //         padding-top: 12px;
-    //         padding-left: 93px;
-    //     }
-    // }
-    
 }
 .footer__adaptive {
     text-align: center;

@@ -22,8 +22,8 @@
     &__navigation {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        height: 60px;
+        // justify-content: space-between;
+        // height: 60px;
         margin-left: auto;
         margin-right: auto;
 
@@ -106,8 +106,9 @@
     }
 
     /* цвет кнопок хедера */
-    .current:active, 
-    .current:visited,
+    // .current:active, 
+    // .current:visited,
+    // .current:hover,
     &__link:hover,
     &__link:focus,
     &__contact:hover,
@@ -116,7 +117,9 @@
     &__icon:focus {
     color: var(--logo);
     }
-
+    .current {
+        color: var(--logo);
+    }
     /* Контакты в хедере */
     &__contact {
         color: var(--header-contact);
@@ -232,23 +235,20 @@
 
 .header-nav__pages{
     margin-left: 40px;
+    margin-bottom: 150px;
 
     @include tablet {
         display: flex;
         flex-wrap: nowrap;
         margin-left: 87px;
+        margin-bottom: 0px;
     }
 
     @include desktop {
         display: flex;
     }
 }
-// .header-nav__pages:last-child {
-//     // margin-bottom: 302px;
-//     @include tablet {
-//         margin: 0;
-//     }
-// }
+
 .header-nav__logo {
     @include desktop {
         font-size: 26px;
@@ -266,11 +266,7 @@
 
     } 
 }
-// .correct {
-//     @include desktop {
-//         padding-left: 0px;
-//     }
-// }
+
 .header__container {
     display: flex;
     // align-items: center;
@@ -283,7 +279,7 @@
 @media screen and (max-width: 767px) {
     .menu__conteiner {
         display: inline-flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-direction: column;
         display: none;
         position: absolute;
@@ -359,6 +355,10 @@
         display: none;
         
     }
+}
+
+.overflow {
+    overflow-x: hidden;
 }
 // .header__box {
 //     width: 1200px;
