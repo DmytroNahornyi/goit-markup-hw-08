@@ -248,13 +248,11 @@
         display: flex;
     }
 }
-
 .header-nav__logo {
     @include desktop {
         font-size: 26px;
     }
 }
-
 .header-nav__contact {
 
     @include desktop {
